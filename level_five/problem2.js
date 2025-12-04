@@ -11,6 +11,11 @@
 // Hint: === checks both value and type
 function easyProblem1(memberRank, age) {
     // TODO: Write your code here
+    if (memberRank === "Commodore" && age === 21){
+        return "can access"
+    } else{
+        return "go home"
+    }
     // Use === to check if memberRank equals "Commodore" AND age equals 21
     // Return "can access" if true, otherwise "go home"
 }
@@ -26,6 +31,11 @@ console.log("Easy 1 - Test 2:", easyProblem1("commodore", 21)); // Should print:
 // Hint: !== means "not equal to"
 function easyProblem2(memberRank, age) {
     // TODO: Write your code here
+    if (memberRank !== "Commodore" && age === 21){
+        return "can sign in"
+    } else{
+        return "go home"
+    }
     // Check if age is 21 AND memberRank is NOT "Commodore"
     // Return "can sign in" if true, otherwise "go home"
 }
@@ -41,6 +51,13 @@ console.log("Easy 2 - Test 2:", easyProblem2("Commodore", 21)); // Should print:
 // Hint: Think about the order of operations
 function mediumProblem(memberRank, age) {
     // TODO: Write your code here
+    if (memberRank === "Commodore" && age === 21) {
+        return "can access"
+    } else if (age === 21 && memberRank !== "Commodore") {
+        return "can sign in"
+    } else{
+        return "go home"
+    }
     // Use if-else if-else with && operator
     // Make sure to check all three conditions correctly
     // Remember: && means BOTH conditions must be true
@@ -59,6 +76,15 @@ console.log("Medium - Test 4:", mediumProblem("Officer", 25)); // Should print: 
 // Hint: Use if inside if (nested if statements)
 function hardProblem(memberRank, age) {
     // TODO: Write your code here
+    if (age === 21) {
+    if (memberRank === "Commodore") {
+        return "can access"
+    } else {
+        return "can sign in"
+    }
+} else {
+    return "go home"
+}
     // Step 1: Check if age equals 21
     //   - If age is 21:
     //     - Check if memberRank is "Commodore" → return "can access"

@@ -11,6 +11,9 @@
 // Hint: Use if statement with && operator
 function easyProblem1(memberType, age) {
     // TODO: Write your code here
+    if (memberType === "Premium" && age === 18) {
+        return "can access";
+    }
     // If memberType is "Premium" AND age is 18, return "can access"
     // Otherwise, return "go home"
 }
@@ -26,6 +29,12 @@ console.log("Easy 1 - Test 2:", easyProblem1("Premium", 17)); // Should print: "
 // Hint: Use if-else with !== operator
 function easyProblem2(memberType, age) {
     // TODO: Write your code here
+    
+     if (memberType = "Premium" && age === 18) {
+        return "can sign in"
+     } else {
+        return "go home"
+     }
     // If age is 18 AND memberType is NOT "Premium", return "can sign in"
     // Otherwise, return "go home"
 }
@@ -42,6 +51,13 @@ console.log("Easy 2 - Test 2:", easyProblem2("Premium", 18)); // Should print: "
 function mediumProblem(memberType, age) {
     // TODO: Write your code here
     // Use if-else if-else to handle all three cases:
+    if (memberType === "Premium" && age === 18) {
+        return "can access"
+    } else if (age === 18 && memberType !== "Premium") {
+        return "can sign in"
+    } else {
+        return "go home"
+    }
     // 1. memberType === "Premium" && age === 18 → "can access"
     // 2. age === 18 && memberType !== "Premium" → "can sign in"
     // 3. Everything else → "go home"
@@ -65,6 +81,15 @@ function hardProblem(memberType, age) {
     //     - If memberType is NOT "Premium" → return "can sign in"
     //   - If age is NOT 18 → return "go home"
     // Use nested if statements!
+if (age === 18) {
+    if (memberType === "Premium") {
+        return "can access"
+    } else {
+        return "can sign in"
+    }
+} else {
+    return "go home"
+}
 }
 
 // Test your code:

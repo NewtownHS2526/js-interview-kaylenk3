@@ -11,6 +11,11 @@
 // Hint: Use if statement with && operator
 function easyProblem1(courseTier, studentAge) {
     // TODO: Write your code here
+if (courseTier === "Master" && age === 18){
+        return "can access"
+    } else{
+        return "go home"
+    }
     // If courseTier is "Master" AND studentAge is 18, return "can access"
     // Otherwise, return "go home"
 }
@@ -26,6 +31,11 @@ console.log("Easy 1 - Test 2:", easyProblem1("Master", 17)); // Should print: "g
 // Hint: Use if-else with !== operator
 function easyProblem2(courseTier, studentAge) {
     // TODO: Write your code here
+    if (courseTier !== "Master" && age === 18){
+        return "can sign in"
+    } else{
+        return "go home"
+    }
     // If studentAge is 18 AND courseTier is NOT "Master", return "can sign in"
     // Otherwise, return "go home"
 }
@@ -41,6 +51,13 @@ console.log("Easy 2 - Test 2:", easyProblem2("Master", 18)); // Should print: "g
 // Hint: Check conditions in order: first "Master" + 18, then 18 + not "Master", then else
 function mediumProblem(courseTier, studentAge) {
     // TODO: Write your code here
+    if (courseTier === "Master" && age === 18) {
+        return "can access"
+    } else if (age === 18 && courseTier !== "Master") {
+        return "can sign in"
+    } else{
+        return "go home"
+    }
     // Use if-else if-else to handle all three cases:
     // 1. courseTier === "Master" && studentAge === 18 → "can access"
     // 2. studentAge === 18 && courseTier !== "Master" → "can sign in"

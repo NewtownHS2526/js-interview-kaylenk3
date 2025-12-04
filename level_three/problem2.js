@@ -11,6 +11,7 @@
 // Hint: === checks both value and type
 function easyProblem1(membershipClass, age) {
     // TODO: Write your code here
+    
     // Use === to check if membershipClass equals "Diamond" AND age equals 21
     // Return "can access" if true, otherwise "go home"
 }

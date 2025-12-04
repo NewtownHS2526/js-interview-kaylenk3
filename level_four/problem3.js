@@ -11,6 +11,11 @@
 // Hint: Just check one condition at a time
 function easyProblem1(memberTier, age) {
     // TODO: Write your code here
+    if (memberTier === "Executive" && age === 18){
+        return "can access"
+    } else{
+        return "go home"
+    }
     // If memberTier is "Executive" AND age is 18, return "can access"
     // Otherwise return "go home"
 }
@@ -26,6 +31,11 @@ console.log("Easy 1 - Test 2:", easyProblem1("Standard", 18)); // Should print: 
 // Hint: if handles one case, else handles the other
 function easyProblem2(memberTier, age) {
     // TODO: Write your code here
+    if (memberTier !== "Executive" && age === 18){
+        return "can sign in"
+    } else{
+        return "go home"
+    }
     // If age is 18 AND memberTier is NOT "Executive", return "can sign in"
     // Otherwise return "go home"
 }
@@ -42,6 +52,13 @@ console.log("Easy 2 - Test 3:", easyProblem2("Premium", 16)); // Should print: "
 // Hint: Use if, else if, and else
 function mediumProblem(memberTier, age) {
     // TODO: Write your code here
+    if (memberTier === "Executive" && age === 18) {
+        return "can access"
+    } else if (age === 18 && memberTier !== "Executive") {
+        return "can sign in"
+    } else{
+        return "go home"
+    }
     // Create a complete if-else if-else chain:
     // 1. First check: memberTier === "Executive" && age === 18 → "can access"
     // 2. Second check: age === 18 && memberTier !== "Executive" → "can sign in"
@@ -61,6 +78,15 @@ console.log("Medium - Test 4:", mediumProblem("VIP", 22)); // Should print: "go 
 // Hint: First check age, then check memberTier inside
 function hardProblem(memberTier, age) {
     // TODO: Write your code here
+    if (age === 18) {
+    if (memberTier === "Executive") {
+        return "can access"
+    } else {
+        return "can sign in"
+    }
+} else {
+    return "go home"
+}
     // Structure your code like this:
     // if (age is 18) {
     //     if (memberTier is "Executive") {
